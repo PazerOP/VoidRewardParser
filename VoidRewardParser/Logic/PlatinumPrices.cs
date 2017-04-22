@@ -50,9 +50,6 @@ namespace VoidRewardParser.Logic
                 partName = partName.Replace(" Blueprint", "");
             }
 
-            // Since Warframe.Market is still using the term Helmet instead of the new one, TODO: this might change
-            partName = partName.Replace("Neuroptics", "Helmet");
-
             if (_fixedQueryStrings.ContainsKey(partName))
             {
                 //Some of Warframe.Market's query strings are mangled (extra spaces, misspellings, words missing) fix them manually...
